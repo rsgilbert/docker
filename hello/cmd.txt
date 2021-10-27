@@ -1,0 +1,11 @@
+// Build container image 
+// t : tags image. Used to specify human readable name.
+// . : Tells docker to look for Dockerfile in current directory
+docker build -t getting-started .
+
+
+// Run container
+// -d : Run container in detached mode
+// -p 7001:4001 : Map port 7001 on host to port 4001 in container 
+// You should be able to get a response from localhost:7001 on host machine.
+docker run -dp 7001:4001 getting-started
