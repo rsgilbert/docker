@@ -1,0 +1,8 @@
+// Following guide at: https://docs.docker.com/get-started/
+// Make sure docker engine is running 
+// -d : run container in detached mode (in the background)
+// -p 82:82 : map port 82 on host to port 82 on container 
+// docker/getting-started : the image to use
+docker -d -p 82:82 docker/getting-started 
+
+
